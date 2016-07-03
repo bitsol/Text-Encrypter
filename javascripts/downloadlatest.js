@@ -1,7 +1,6 @@
- document.write("<iframe id='downloadFrame' style='display:none;'></iframe>");
+ document.write("<iframe id='downloadFrame' style='display:none;'>Your browser doesn't support iframe.</iframe>");
 function Download(url) {
     document.getElementById('downloadFrame').src = url;
-    window.close();
 }
   function loadDoc() {
   var xhttp = new XMLHttpRequest();
