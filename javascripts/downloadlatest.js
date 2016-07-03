@@ -1,6 +1,7 @@
  document.write("<iframe id='downloadFrame' style='display:none;'></iframe>");
 function Download(url) {
     document.getElementById('downloadFrame').src = url;
+    window.close();
 }
   function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -12,5 +13,4 @@ function Download(url) {
   xhttp.open("GET", "https://raw.githubusercontent.com/bitsol/Text-Encrypter/master/latest.txt", true);
   xhttp.send();
 }
-
   loadDoc();
