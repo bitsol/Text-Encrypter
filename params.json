@@ -1,0 +1,6 @@
+{
+  "name": "Text-encrypter",
+  "tagline": "A Windows application that scrambles or \"encrypts\" text using a chosen passcode.",
+  "body": "<h1>Text-Encrypter</h1>\r\nA Windows application that scrambles or \"encrypts\" text using a chosen passcode.\r\n<h2>Installation & Screenshots</h2>\r\n<h3>Screenshots</h3>\r\nHere is a screenshot of the latest release:<br>\r\n<img src=\"https://raw.githubusercontent.com/bitsol/Text-Encrypter/master/TextEncrypter.png\" alt=\"Screenshot\"></img><br>\r\n<h3>Installation</h3>\r\nStep 1: Find the latest version from <a href=\"https://github.com/bitsol/Text-Encrypter/releases/latest\">here</a>.<br>\r\nStep 2: Follow the instructions noted in the release description.\r\n<h2>Check out my other software!</h2>\r\nIf you like Text-Encrypter, then check out my Github profile <a href=\"https://github.com/bitsol\">here</a>.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
