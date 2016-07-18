@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="" Height="386" Width="583" ResizeMode="NoResize">
     <Grid>
-
+        
         <RadioButton x:Name="radioButtonEncrypt" Loaded="radioButtonEncrypt_Loaded" Content="Encrypt" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="70" Checked="radioButtonEncrypt_Checked"/>
         <RadioButton x:Name="radioButtonDecrypt" Content="Decrypt" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Width="70" Checked="radioButtonDecrypt_Checked"/>
         <Label x:Name="lblTitle" FontSize="20px" Content="{Binding Title,RelativeSource={RelativeSource FindAncestor,AncestorType=Window}}" HorizontalAlignment="Left" Margin="196,282,0,0" VerticalAlignment="Top" Width="198" Height="52"/>
@@ -20,7 +20,6 @@
         <Label x:Name="lblPasscode" Content="Add Security with a Custom Number Password (less than 30000):" HorizontalAlignment="Left" Margin="97,0,0,281" VerticalAlignment="Bottom" Height="28"/>
         <Button x:Name="btnCopy" Content="Copy Output" HorizontalAlignment="Left" Margin="395,110,0,0" VerticalAlignment="Top" Width="75" Click="btnCopy_Click"/>
         <Button x:Name="btnRandom" Content="Generate Random" HorizontalAlignment="Left" Margin="317,76,0,0" VerticalAlignment="Top" Width="102" Click="btnRandom_Click" />
-        <Label x:Name="lblVersion" Content="" HorizontalAlignment="Left" Margin="471,312,0,0" VerticalAlignment="Top" Height="33" Width="87"/>
 
     </Grid>
 </Window>

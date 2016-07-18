@@ -10,8 +10,8 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Diagnostics;
-using System.Net;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 using System.IO;
 namespace Text_Encrypter
 {
@@ -20,48 +20,9 @@ namespace Text_Encrypter
     /// </summary>
     public partial class MainWindow : Window
     {
-        public string CurrentVersion = "v0.2-alpha";
         public MainWindow()
         {
             InitializeComponent();
-            lblVersion.Content = CurrentVersion;
-            try { 
-            if (File.ReadAllText("updatedrecently") == "true")
-            {
-                File.Copy("update.exe", "TextEncrypter.exe");
-                File.WriteAllText("updatedrecently", "false");
-
-            }
-            }catch
-            {
-
-            }
-            try
-            {
-                var webRequest = WebRequest.Create(@"https://raw.githubusercontent.com/bitsol/Text-Encrypter/master/latest.txt");
-
-                var response = webRequest.GetResponse();
-                var content = response.GetResponseStream();
-                var reader = new StreamReader(content);
-
-                string latestVersion = reader.ReadToEnd().Replace("\n", "");
-                if (latestVersion != CurrentVersion)
-                {
-                    if (MessageBox.Show("An update to Text-Encrypter was found. Would you like to download it?", "Update", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                    {
-
-                        string remoteUri = "https://github.com/bitsol/Text-Encrypter/releases/download/" + latestVersion + "/TextEncrypter.exe";
-                        string fileName = "update.exe";
-                        WebClient myWebClient = new WebClient();
-                        string myStringWebResource = remoteUri;
-                        myWebClient.DownloadFile(myStringWebResource, fileName);
-                        File.WriteAllText("updatedrecently", "true");
-                        Process.Start("update.exe");
-                        Environment.Exit(0);
-
-                    }
-                }
-            }catch { }
             try
             {
                 txtPasscode.Text = File.ReadAllText(@"passcode.txt");
