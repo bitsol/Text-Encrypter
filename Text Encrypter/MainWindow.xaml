@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Text_Encrypter"
         mc:Ignorable="d"
-        Title="" Height="386" Width="583" ResizeMode="NoResize">
+        Title="" Height="386" Width="583" ResizeMode="CanMinimize">
     <Grid>
         
         <RadioButton x:Name="radioButtonEncrypt" Loaded="radioButtonEncrypt_Loaded" Content="Encrypt" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="70" Checked="radioButtonEncrypt_Checked"/>
