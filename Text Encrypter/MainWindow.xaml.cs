@@ -102,9 +102,9 @@ namespace Text_Encrypter
                     
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                txtOutput.Text = "An error occurred.";
+                txtOutput.Text = "An error occurred:\n" + ex.ToString();
                 
             }
         }
